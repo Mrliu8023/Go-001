@@ -29,6 +29,7 @@ func main() {
 	}()
 
 	if err := egs.Wait(); err != nil {
+		// 不知道为什么退出会报  http: Server closed
 		log.Fatal(err)
 	}
 }
